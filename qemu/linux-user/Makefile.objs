@@ -1,0 +1,16 @@
+ifdef CONFIG_LIBTINYCODE
+obj-y = ptc.o uaccess.o mmap.o init_cpu.o
+else
+obj-y = main.o syscall.o strace.o mmap.o signal.o \
+	elfload.o linuxload.o uaccess.o uname.o
+
+obj-$(TARGET_HAS_BFLT) += flatload.o
+obj-$(TARGET_I386) += vm86.o
+obj-$(TARGET_ARM) += arm/nwfpe/
+obj-$(TARGET_M68K) += m68k-sim.o
+endif
+
+ifdef CONFIG_LLVM_HELPERS
+ll-y = main.ll syscall.ll mmap.ll signal.ll uaccess.ll init_cpu.ll uname.ll
+ll-$(TARGET_I386) += vm86.ll
+endif

@@ -1,0 +1,32 @@
+SEQ0 :=
+SEQ1 := $(SEQ0) 1
+SEQ2 := $(SEQ1) 2
+SEQ3 := $(SEQ2) 3
+SEQ4 := $(SEQ3) 4
+SEQ5 := $(SEQ4) 5
+SEQ6 := $(SEQ5) 6
+SEQ7 := $(SEQ6) 7
+SEQ8 := $(SEQ7) 8
+SEQ9 := $(SEQ8) 9
+
+SEQ10 := $(SEQ9) 0
+SEQ11 := $(SEQ10) 1
+SEQ12 := $(SEQ11) 2
+SEQ13 := $(SEQ12) 3
+SEQ14 := $(SEQ13) 4
+SEQ15 := $(SEQ14) 5
+SEQ16 := $(SEQ15) 6
+SEQ17 := $(SEQ16) 7
+SEQ18 := $(SEQ17) 8
+SEQ19 := $(SEQ18) 9
+
+SEQ20 := $(SEQ19) 0
+SEQ21 := $(SEQ20) 1
+SEQ22 := $(SEQ21) 2
+SEQ23 := $(SEQ22) 3
+SEQ24 := $(SEQ23) 4
+SEQ25 := $(SEQ24) 5
+SEQ26 := $(SEQ25) 6
+SEQ27 := $(SEQ26) 7
+SEQ28 := $(SEQ27) 8
+SEQ29 := $(SEQ28) 9

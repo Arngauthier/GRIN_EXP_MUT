@@ -1,0 +1,10 @@
+$(call option,X86_64_TRIPLE,x86_64-gentoo-linux-musl)
+$(call option,X86_64_LINUX_ARCH_NAME,x86_64)
+$(call option,X86_64_BINUTILS_VERSION,2.25)
+$(call option,X86_64_MUSL_VERSION,1.1.12)
+$(call option,X86_64_LINUX_VERSION,4.5.2)
+$(call option,X86_64_GCC_VERSION,4.9.3)
+$(call option,X86_64_EXTRA_GCC_CONFIGURE_OPTIONS,--without-cloog --enable-targets=all --with-multilib-list=m64 --without-isl)
+$(call option,X86_64_DYNAMIC,0)
+$(call prepare-for-toolchain,x86-64)
+include support/toolchain.mk
