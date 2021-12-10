@@ -121,5 +121,5 @@ $ ./result_coreutils_realworld_O2.sh
 $ ./count.sh
 ```
 
-The aggregated results will be saved in `./result.csv`.
+The aggregated results will be saved in `./result.csv` and `./result.csv.ascii_table.txt`.
 The generated results are saved in the `result/` directory, which contains the test results of each benchmark.
